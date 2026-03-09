@@ -1,0 +1,15 @@
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btnContainer button {
+  padding: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}

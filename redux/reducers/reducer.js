@@ -1,5 +1,10 @@
 const initialState = {
-  products: [],
+  products: [
+    { id: 0, name: 'milk', price: 3 },
+    { id: 1, name: 'bread', price: 2 },
+    { id: 2, name: 'apple', price: 5 },
+    { id: 3, name: 'banana', price: 10 },
+  ],
   basket: [],
 };
 const basketReducer = (state = initialState, action) => {
@@ -18,8 +23,12 @@ const basketReducer = (state = initialState, action) => {
       return {
         ...state,
         basket: state.basket.map((product) => {
-          if (product.name === action.payload.name) {
-            product.quantity = action.payload.quantity;
+          if (product.id === action.payload.id) {
+            if (product.quantity > 0)
+              return {
+                ...product,
+                quantity: product.quantity + action.payload.param,
+              };
           }
           return product;
         }),

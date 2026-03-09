@@ -1,0 +1,16 @@
+.basketContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: end;
+}
+
+.productInBasket {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.productInBasket input {
+  padding: 10px;
+}

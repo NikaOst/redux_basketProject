@@ -6,18 +6,18 @@ export const addToCart = (data) => {
 };
 export const removeFromCart = (id) => {
   return {
-    type: 'DELETE_FROM_CART',
+    type: 'REMOVE_FROM_CART',
     payload: {
       id,
     },
   };
 };
-export const updateCartQuantity = (name, quantity) => {
+export const updateCartQuantity = (id, param) => {
   return {
-    type: 'UPDATE_QUANTITY',
+    type: 'UPDATE_CART_QUANTITY',
     payload: {
-      name,
-      quantity,
+      id,
+      param,
     },
   };
 };
