@@ -1,0 +1,15 @@
+.productContainer {
+  margin: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product button {
+  padding: 10px;
+}
